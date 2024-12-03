@@ -1,0 +1,110 @@
+.chatroom-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+.chatroom-container.dark{
+    background-color: #2c2f33;
+    color: #fff;
+}
+.chatroom-container.light {
+    background-color: #f0f0f0;
+    color: #333;
+}
+.room-name{
+    padding: 15px;
+    text-align: center;
+    background-color: #40444b;
+    color: #61dafb;
+    border-bottom: 2px solid #7289da;
+}
+.theme-toggle{
+    background-color: #61dafb;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.theme-toggle:hover {
+    background-color: #21a1f1;
+}
+.chat-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    background-color: #23272a;
+    border-bottom: 2px solid #40444b;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.message-self {
+    text-align: right;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+    max-width: 60%;
+    animation: fadeIn 0.5s ease;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.3);
+}
+.message {
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 5px;
+    max-width: 60%;
+    animation: fadeIn 0.5s ease;
+}
+.username {
+    font-weight: bold;
+}
+.typing-indicator {
+    color: #7289da;
+    font-style: italic;
+    margin: 5px;
+}
+.online-users {
+    padding: 10px;
+    background-color: #40444b;
+    color: white;
+    border-top: 2px solid #7289da;
+}
+.online-user {
+    list-style-type: none;
+}
+.message-input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #40444b;
+}
+.message-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.send-button{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.send-button:hover {
+    background-color: #21a1f1;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0
+}
+    to{
+        opacity: 1;
+ }
+}
